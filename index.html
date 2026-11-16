@@ -151,6 +151,12 @@ thead th,tbody th{font-weight:600}
 .pt span{color:var(--muted)}
 .map.editing .pt{cursor:grab;touch-action:none;user-select:none}
 .cap{margin:0;font-size:13px;color:var(--muted)}
+.maplink{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:16px;background:var(--surface);border:1px solid var(--line);border-radius:14px;color:var(--ink);text-decoration:none}
+.maplink:hover{border-color:var(--cool)}
+.maplink span:first-child{display:flex;flex-direction:column;gap:2px;min-width:0}
+.maplink b{font-family:var(--font-display);font-size:17px;font-weight:600}
+.maplink small{font-size:13px;color:var(--muted)}
+.maplink .go{font-size:22px;color:var(--cool)}
 .mctl{display:flex;flex-direction:column;gap:6px}
 .mrow{display:flex;flex-wrap:wrap;align-items:center;gap:10px}
 .mrow strong{font:600 16px var(--font-display)}
@@ -277,7 +283,7 @@ details.eh .row{margin:8px 0}
     <div class="panel" id="snowbox" data-dyn></div>
   </section>
 
-  <section aria-labelledby="t-map">
+  <section id="mapsec" aria-labelledby="t-map">
     <h2 id="t-map">Mapa de la zona</h2>
     <div id="mapbox" data-dyn></div>
     <div id="mapctl" data-dyn></div>
@@ -314,7 +320,7 @@ details.eh .row{margin:8px 0}
   </section>
 </div>
 
-<script data-pg type="application/json" id="app-data">{"place":"Granada","start":"2026-11-12","updated":"2026-11-12","sample":false,"note":"","days":[{"c":"lluvia","max":18,"min":13,"pop":90,"mm":1,"wind":18,"gust":37,"feel":14,"hours":[{"c":"cubierto","t":17,"mm":0,"wind":18,"gust":51},{"c":"cubierto","t":16,"mm":0,"wind":16,"gust":43},{"c":"lluvia","t":16,"mm":0.4,"wind":16,"gust":43},{"c":"cubierto","t":15,"mm":0,"wind":17,"gust":46},{"c":"cubierto","t":14,"mm":0,"wind":18,"gust":48},{"c":"cubierto","t":14,"mm":0,"wind":18,"gust":47},{"c":"cubierto","t":13,"mm":0,"wind":17,"gust":44},{"c":"lluvia","t":13,"mm":0.4,"wind":16,"gust":43},{"c":"cubierto","t":13,"mm":0,"wind":15,"gust":42},{"c":"cubierto","t":13,"mm":0,"wind":10,"gust":21},{"c":"lluvia","t":14,"mm":0.1,"wind":9,"gust":19},{"c":"lluvia","t":15,"mm":0.4,"wind":9,"gust":18},{"c":"poco","t":17,"mm":0,"wind":11,"gust":27},{"c":"poco","t":18,"mm":0,"wind":18,"gust":35},{"c":"poco","t":18,"mm":0,"wind":18,"gust":37},{"c":"lluvia","t":16,"mm":0.1,"wind":12,"gust":35},{"c":"lluvia","t":16,"mm":0.2,"wind":13,"gust":24},{"c":"lluvia","t":15,"mm":0.1,"wind":12,"gust":23},{"c":"poco","t":13,"mm":0,"wind":10,"gust":24},{"c":"poco","t":13,"mm":0,"wind":8,"gust":21},{"c":"poco","t":14,"mm":0,"wind":11,"gust":21},{"c":"cubierto","t":13,"mm":0,"wind":10,"gust":20},{"c":"cubierto","t":13,"mm":0,"wind":10,"gust":20},{"c":"cubierto","t":13,"mm":0,"wind":6,"gust":18}]},{"c":"poco","max":17,"min":12,"pop":70,"mm":0.2,"wind":9,"gust":23,"feel":"","hours":[{"c":"cubierto","t":13,"mm":0,"wind":13,"gust":37},{"c":"cubierto","t":13,"mm":0,"wind":12,"gust":36},{"c":"lluvia","t":13,"mm":0,"wind":12,"gust":36},{"c":"lluvia","t":12,"mm":0.2,"wind":12,"gust":36},{"c":"cubierto","t":12,"mm":0,"wind":12,"gust":36},{"c":"cubierto","t":12,"mm":0,"wind":12,"gust":36},{"c":"cubierto","t":13,"mm":0,"wind":11,"gust":35},{"c":"cubierto","t":12,"mm":0,"wind":11,"gust":34},{"c":"cubierto","t":13,"mm":0,"wind":11,"gust":33},{"c":"poco","t":14,"mm":0,"wind":11,"gust":33},{"c":"poco","t":15,"mm":0,"wind":12,"gust":33},{"c":"poco","t":16,"mm":0,"wind":13,"gust":34},{"c":"cubierto","t":15,"mm":0,"wind":14,"gust":36},{"c":"poco","t":17,"mm":0,"wind":14,"gust":38},{"c":"poco","t":17,"mm":0,"wind":15,"gust":40},{"c":"poco","t":17,"mm":0,"wind":15,"gust":42},{"c":"poco","t":16,"mm":0,"wind":14,"gust":42},{"c":"poco","t":14,"mm":0,"wind":12,"gust":38},{"c":"poco","t":13,"mm":0,"wind":10,"gust":32},{"c":"poco","t":12,"mm":0,"wind":10,"gust":28},{"c":"poco","t":12,"mm":0,"wind":9,"gust":26},{"c":"poco","t":12,"mm":0,"wind":8,"gust":26},{"c":"poco","t":12,"mm":0,"wind":7,"gust":25},{"c":"poco","t":12,"mm":0,"wind":7,"gust":24}]},{"c":"poco","max":19,"min":10,"pop":5,"mm":0,"wind":11,"gust":26,"feel":15,"hours":[{"c":"poco","t":11,"mm":0,"wind":7,"gust":23},{"c":"cubierto","t":12,"mm":0,"wind":7,"gust":22},{"c":"cubierto","t":12,"mm":0,"wind":7,"gust":23},{"c":"cubierto","t":12,"mm":0,"wind":8,"gust":24},{"c":"poco","t":11,"mm":0,"wind":8,"gust":25},{"c":"poco","t":10,"mm":0,"wind":9,"gust":25},{"c":"poco","t":10,"mm":0,"wind":9,"gust":25},{"c":"poco","t":10,"mm":0,"wind":9,"gust":25},{"c":"poco","t":11,"mm":0,"wind":9,"gust":26},{"c":"poco","t":13,"mm":0,"wind":10,"gust":27},{"c":"poco","t":15,"mm":0,"wind":10,"gust":29},{"c":"poco","t":17,"mm":0,"wind":12,"gust":32},{"c":"poco","t":18,"mm":0,"wind":13,"gust":35},{"c":"poco","t":18,"mm":0,"wind":15,"gust":38},{"c":"poco","t":19,"mm":0,"wind":15,"gust":39},{"c":"poco","t":18,"mm":0,"wind":15,"gust":39},{"c":"poco","t":18,"mm":0,"wind":14,"gust":38},{"c":"poco","t":16,"mm":0,"wind":12,"gust":35},{"c":"poco","t":15,"mm":0,"wind":10,"gust":31},{"c":"poco","t":13,"mm":0,"wind":8,"gust":27},{"c":"poco","t":12,"mm":0,"wind":7,"gust":24},{"c":"cubierto","t":12,"mm":0,"wind":5,"gust":21},{"c":"cubierto","t":11,"mm":0,"wind":4,"gust":18},{"c":"cubierto","t":11,"mm":0,"wind":4,"gust":17}]},{"c":"poco","max":16,"min":10,"pop":16,"mm":0,"wind":7,"gust":32,"feel":14,"hours":[{"c":"cubierto","t":11,"mm":0,"wind":5,"gust":17},{"c":"poco","t":11,"mm":0,"wind":3,"gust":13},{"c":"cubierto","t":10,"mm":0,"wind":2,"gust":12},{"c":"cubierto","t":12,"mm":0,"wind":4,"gust":20},{"c":"cubierto","t":15,"mm":0,"wind":10,"gust":32},{"c":"cubierto","t":16,"mm":0,"wind":10,"gust":31},{"c":"poco","t":13,"mm":0,"wind":5,"gust":23},{"c":"poco","t":11,"mm":0,"wind":6,"gust":19}]},{"c":"nubes","max":16,"min":10,"pop":55,"mm":0,"wind":9,"gust":15,"feel":15,"hours":[{"c":"cubierto","t":10,"mm":0,"wind":6,"gust":10},{"c":"poco","t":11,"mm":0,"wind":8,"gust":15},{"c":"nubes","t":15,"mm":0,"wind":11,"gust":15},{"c":"nubes","t":14,"mm":2.4,"wind":8,"gust":10}]},{"c":"lluvia","max":18,"min":12,"pop":0,"mm":0},{"c":"lluvia","max":18,"min":15,"pop":0,"mm":0}],"map":{"caption":"Mapa de ejemplo, sin imagen de fondo","frames":[],"ratio":1,"points":[{"n":"Norte","x":30,"y":24,"c":"nubes","t":11},{"n":"Valle","x":52,"y":48,"c":"poco","t":16},{"n":"Costa","x":74,"y":72,"c":"lluvia","t":14},{"n":"Sierra","x":22,"y":68,"c":"cubierto","t":3}],"hidePoints":true},"snow":{"on":true,"note":"","days":[2400,2500,2600,"",2800]}}</script>
+<script data-pg type="application/json" id="app-data">{"place":"Granada!!!","start":"2026-11-17","updated":"2026-11-16","sample":false,"note":"","days":[{"c":"nubes","max":17,"min":6,"mm":0.1,"wind":8,"gust":19,"pop":74,"feel":"","hours":[{"c":"sol","t":7,"mm":0,"wind":4,"gust":""},{"c":"sol","t":6,"mm":0,"wind":2,"gust":""},{"c":"sol","t":6,"mm":0,"wind":2,"gust":""},{"c":"sol","t":6,"mm":0,"wind":2,"gust":""},{"c":"sol","t":6,"mm":0,"wind":1,"gust":""},{"c":"sol","t":6,"mm":0,"wind":2,"gust":""},{"c":"sol","t":6,"mm":0,"wind":2,"gust":""},{"c":"poco","t":6,"mm":0,"wind":2,"gust":""},{"c":"poco","t":7,"mm":0,"wind":0,"gust":""},{"c":"poco","t":10,"mm":0,"wind":2,"gust":""},{"c":"poco","t":12,"mm":0,"wind":4,"gust":""},{"c":"poco","t":13,"mm":0,"wind":7,"gust":""},{"c":"poco","t":15,"mm":0,"wind":7,"gust":""},{"c":"poco","t":17,"mm":0,"wind":7,"gust":""},{"c":"nubes","t":17,"mm":0,"wind":8,"gust":""},{"c":"nubes","t":17,"mm":0,"wind":7,"gust":""},{"c":"nubes","t":16,"mm":0,"wind":5,"gust":""},{"c":"cubierto","t":16,"mm":0,"wind":8,"gust":""},{"c":"cubierto","t":16,"mm":0,"wind":9,"gust":""},{"c":"cubierto","t":16,"mm":0,"wind":9,"gust":""},{"c":"cubierto","t":16,"mm":0,"wind":12,"gust":""},{"c":"cubierto","t":16,"mm":0,"wind":12,"gust":""},{"c":"cubierto","t":16,"mm":0.1,"wind":11,"gust":""},{"c":"cubierto","t":16,"mm":0,"wind":9,"gust":""}]},{"c":"nubes","max":18,"min":14,"mm":0.7,"wind":8,"gust":29,"pop":94,"feel":"","hours":[{"c":"cubierto","t":16,"mm":0,"wind":7,"gust":""},{"c":"lluvia","t":16,"mm":0,"wind":7,"gust":""},{"c":"lluvia","t":16,"mm":0.3,"wind":8,"gust":""},{"c":"niebla","t":16,"mm":0.1,"wind":10,"gust":""},{"c":"cubierto","t":16,"mm":0,"wind":10,"gust":""},{"c":"cubierto","t":16,"mm":0,"wind":9,"gust":""},{"c":"nubes","t":15,"mm":0,"wind":8,"gust":""},{"c":"cubierto","t":14,"mm":0,"wind":7,"gust":""},{"c":"nubes","t":15,"mm":0,"wind":5,"gust":""},{"c":"nubes","t":15,"mm":0,"wind":9,"gust":""},{"c":"nubes","t":16,"mm":0,"wind":9,"gust":""},{"c":"nubes","t":17,"mm":0,"wind":9,"gust":""},{"c":"nubes","t":18,"mm":0,"wind":8,"gust":""},{"c":"nubes","t":18,"mm":0,"wind":7,"gust":""},{"c":"nubes","t":18,"mm":0,"wind":8,"gust":""},{"c":"nubes","t":18,"mm":0,"wind":7,"gust":""},{"c":"nubes","t":18,"mm":0,"wind":6,"gust":""},{"c":"cubierto","t":18,"mm":0,"wind":7,"gust":""},{"c":"cubierto","t":17,"mm":0,"wind":8,"gust":""},{"c":"lluvia","t":17,"mm":0,"wind":3,"gust":""},{"c":"lluvia","t":17,"mm":0.2,"wind":3,"gust":""},{"c":"cubierto","t":17,"mm":0,"wind":11,"gust":""},{"c":"cubierto","t":17,"mm":0,"wind":18,"gust":""},{"c":"lluvia","t":16,"mm":0.1,"wind":14,"gust":""}]},{"c":"lluvia","max":17,"min":11,"pop":95,"mm":9.8,"wind":16,"gust":42,"feel":15,"hours":[{"c":"niebla","t":16,"mm":0.2,"wind":8,"gust":""},{"c":"cubierto","t":16,"mm":0,"wind":13,"gust":""},{"c":"cubierto","t":16,"mm":0,"wind":16,"gust":""},{"c":"cubierto","t":16,"mm":0,"wind":15,"gust":""},{"c":"cubierto","t":16,"mm":0,"wind":10,"gust":""},{"c":"lluvia","t":15,"mm":0.1,"wind":9,"gust":""},{"c":"lluvia","t":15,"mm":0.3,"wind":8,"gust":""},{"c":"niebla","t":15,"mm":0.3,"wind":7,"gust":""},{"c":"niebla","t":15,"mm":0,"wind":9,"gust":""},{"c":"poco","t":15,"mm":0,"wind":10,"gust":""},{"c":"nubes","t":15,"mm":0,"wind":6,"gust":""},{"c":"poco","t":15,"mm":0,"wind":7,"gust":""},{"x":1},{"x":1},{"x":1},{"x":1},{"x":1},{"x":1},{"x":1},{"x":1},{"x":1},{"x":1},{"x":1},{"x":1}]},{"c":"poco","max":17,"min":9,"pop":6,"mm":0,"wind":6,"gust":25,"feel":15,"hours":[{"c":"nubes","t":10,"mm":0,"wind":2,"gust":8},{"c":"nubes","t":10,"mm":0,"wind":3,"gust":9},{"c":"nubes","t":9,"mm":0,"wind":4,"gust":12},{"c":"sol","t":11,"mm":0,"wind":5,"gust":23},{"c":"poco","t":15,"mm":0,"wind":6,"gust":25},{"c":"poco","t":17,"mm":0,"wind":5,"gust":25},{"c":"sol","t":13,"mm":0,"wind":2,"gust":22},{"c":"sol","t":10,"mm":0,"wind":4,"gust":21}]},{"c":"cubierto","max":21,"min":9,"pop":10,"mm":0,"wind":9,"gust":23,"feel":18,"hours":[{"c":"poco","t":9,"mm":0,"wind":2,"gust":16},{"c":"cubierto","t":10,"mm":0,"wind":2,"gust":23},{"c":"cubierto","t":18,"mm":0,"wind":8,"gust":22},{"c":"nubes","t":17,"mm":0,"wind":6,"gust":23}]},{"c":"cubierto","max":17,"min":11,"pop":0,"mm":0},{"c":"cubierto","max":18,"min":10,"pop":0,"mm":0}],"map":{"caption":"Mapa de ejemplo, sin imagen de fondo","frames":[],"ratio":1,"points":[{"n":"Norte","x":30,"y":24,"c":"nubes","t":11},{"n":"Valle","x":52,"y":48,"c":"poco","t":16},{"n":"Costa","x":74,"y":72,"c":"lluvia","t":14},{"n":"Sierra","x":22,"y":68,"c":"cubierto","t":3}],"hidePoints":true},"snow":{"on":true,"note":"","days":["","","","",""]}}</script>
 
 <script data-pg>
 (function(){
@@ -405,14 +411,14 @@ function curveT(d,h){
 function slotsFor(i){
   var d=S.days[i], step=STEP[i], n=24/step, out=[];
   for(var k=0;k<n;k++){
-    var h=k*step, e=(d.hours&&d.hours[k])||{};
+    var h=k*step, e=(d.hours&&d.hours[k])||{}, hd=!!d.hours;
     out.push({
-      h:h, step:step,
+      h:h, step:step, skip:!!e.x,
       c:COND[e.c]?e.c:(COND[d.c]?d.c:'sol'),
       t:(e.t===''||e.t==null)?Math.round(curveT(d,h)):num(e.t),
       mm:has(e.mm)?num(e.mm):null,
-      wind:has(e.wind)?num(e.wind):(has(d.wind)?num(d.wind):null),
-      gust:has(e.gust)?num(e.gust):(has(d.gust)?num(d.gust):null)
+      wind:has(e.wind)?num(e.wind):(!hd&&has(d.wind)?num(d.wind):null),
+      gust:has(e.gust)?num(e.gust):(!hd&&has(d.gust)?num(d.gust):null)
     });
   }
   return out;
@@ -424,11 +430,12 @@ function rainCell(s){
 }
 function windCell(s){
   if(s.wind==null&&s.gust==null) return '<span class="hw">—</span>';
-  return '<span class="hw">'+(s.wind==null?'—':Math.round(s.wind))+' / '+(s.gust==null?'—':Math.round(s.gust))+'</span>';
+  if(s.gust==null) return '<span class="hw">'+Math.round(s.wind)+' km/h</span>';
+  return '<span class="hw">'+(s.wind==null?'—':Math.round(s.wind))+' / '+Math.round(s.gust)+'</span>';
 }
 function hoursHTML(i){
   var d=S.days[i], nowH=isToday(i)?new Date().getHours():-1;
-  var cells=slotsFor(i).map(function(s){
+  var cells=slotsFor(i).filter(function(s){return !s.skip}).map(function(s){
     var cur=nowH>=s.h&&nowH<s.h+s.step;
     return '<li class="hc'+(cur?' now':'')+'"><span class="ht">'+hh2(s.h)+'</span>'+ICON(s.c,isNight(s.h))+'<b>'+fmtT(s.t)+'</b>'+rainCell(s)+windCell(s)+'<span class="sr">'+(s.c==='sol'&&isNight(s.h)?'Despejado':COND[s.c])+(s.mm!=null?', lluvia '+fmtMm(s.mm)+' mm':'')+(s.wind!=null?', viento '+Math.round(s.wind)+' km/h':'')+(s.gust!=null?', rachas '+Math.round(s.gust)+' km/h':'')+'</span></li>';
   }).join('');
@@ -449,7 +456,7 @@ function renderDays(){
       '<div class="dn"><strong>'+wd(i)+'</strong><span>'+dm(i)+'</span></div>'+ICON(c)+
       '<div class="cond">'+COND[c]+'</div>'+
       '<div class="tt"><b><span class="sr">Máxima </span>'+fmtT(d.max)+'</b><span><span class="sr">Mínima </span>'+fmtT(d.min)+'</span></div>'+
-      '<div class="rn"><div class="bar"><i style="width:'+p+'%"></i></div><span>'+p+'% · '+num(d.mm)+' mm</span>'+extraHTML(d)+'</div></div>';
+      '<div class="rn"><div class="bar"><i style="width:'+(has(d.pop)?p:0)+'%"></i></div><span>'+(has(d.pop)?p+'% · ':'')+num(d.mm)+' mm</span>'+extraHTML(d)+'</div></div>';
   }).join('');
   if(selDay!=null) html+='<div class="hours" id="hours" role="region" aria-label="Previsión por horas" style="--o:'+(selDay*2+1)+'">'+hoursHTML(selDay)+'</div>';
   $('#days').innerHTML=html;
@@ -553,13 +560,13 @@ function renderRain(){
   });
   var bars='';
   D.forEach(function(d,i){
-    var p=clamp(num(d.pop),0,100), x=L+slot*i+(slot-bw)/2, base=Y(0), y=Y(p), h=base-y, cx=x+bw/2;
-    var tt='<title>'+esc(wd(i)+': '+p+'% de probabilidad, '+num(d.mm)+' mm')+'</title>';
+    var hp=has(d.pop), p=clamp(num(d.pop),0,100), x=L+slot*i+(slot-bw)/2, base=Y(0), y=Y(p), h=base-y, cx=x+bw/2;
+    var tt='<title>'+esc(wd(i)+': '+(hp?p+'% de probabilidad, ':'sin probabilidad, ')+num(d.mm)+' mm')+'</title>';
     if(h>0){
       var r=Math.min(4,h/2);
       bars+='<path class="bar-r" d="M'+x+','+base+'V'+(y+r)+'a'+r+','+r+' 0 0 1 '+r+',-'+r+'H'+(x+bw-r)+'a'+r+','+r+' 0 0 1 '+r+','+r+'V'+base+'Z">'+tt+'</path>';
     }
-    bars+='<text class="lbl" x="'+cx+'" y="'+(y-7)+'" text-anchor="middle">'+p+'%</text>'+
+    bars+='<text class="lbl" x="'+cx+'" y="'+(y-7)+'" text-anchor="middle">'+(hp?p+'%':'—')+'</text>'+
       '<text class="ax" x="'+cx+'" y="'+(H-B+22)+'" text-anchor="middle"'+(isToday(i)?' style="font-weight:600;fill:var(--ink)"':'')+'>'+wd(i)+'</text>'+
       '<text class="ax" x="'+cx+'" y="'+(H-B+37)+'" text-anchor="middle">'+num(d.mm)+' mm</text>';
   });
@@ -570,7 +577,7 @@ function renderRain(){
 function renderTable(){
   $('#tbl').innerHTML='<table><thead><tr><th>Día</th><th>Tiempo</th><th>Máx</th><th>Mín</th><th>Lluvia</th><th>Sens.</th><th>Viento (km/h)</th></tr></thead><tbody>'+
     S.days.slice(0,7).map(function(d,i){
-      return '<tr><th scope="row">'+esc(wd(i)+' '+dm(i))+'</th><td>'+(COND[d.c]||'—')+'</td><td>'+(has(d.max)?fmtT(d.max):'—')+'</td><td>'+(has(d.min)?fmtT(d.min):'—')+'</td><td>'+(i<5?clamp(num(d.pop),0,100)+'% · '+num(d.mm)+' mm':'Tendencia')+'</td><td>'+(has(d.feel)?fmtT(d.feel):'—')+'</td><td>'+(windTxt(d).replace('Viento ','')||'—')+'</td></tr>';
+      return '<tr><th scope="row">'+esc(wd(i)+' '+dm(i))+'</th><td>'+(COND[d.c]||'—')+'</td><td>'+(has(d.max)?fmtT(d.max):'—')+'</td><td>'+(has(d.min)?fmtT(d.min):'—')+'</td><td>'+(i<5?(has(d.pop)?clamp(num(d.pop),0,100)+'% · ':'')+num(d.mm)+' mm':'Tendencia')+'</td><td>'+(has(d.feel)?fmtT(d.feel):'—')+'</td><td>'+(windTxt(d).replace('Viento ','')||'—')+'</td></tr>';
     }).join('')+'</tbody></table>';
 }
 
@@ -606,6 +613,7 @@ function renderMapCtl(){
 }
 function renderMap(){
   var m=S.map, fr=m.frames;
+  $('#mapsec').hidden=!editing&&fr.length===0;
   if(curFrame>=fr.length) curFrame=Math.max(0,fr.length-1);
   if(fr.length<2) stopPlay();
   $('#mapbox').innerHTML='<div class="map'+(editing?' editing':'')+'" id="map" role="group" aria-label="'+esc(m.caption||'Mapa de la zona')+'" style="aspect-ratio:'+clamp(num(m.ratio,1.333),0.8,2)+'">'+
