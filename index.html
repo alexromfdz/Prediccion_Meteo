@@ -1,14 +1,4 @@
-<!doctype html>
-<html lang="es">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-<title>Previsión Casera</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,700&family=Instrument+Sans:wght@400;500;600&display=swap">
-<style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style>
-<style>
+<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body><title data-pg="">Previsión Casera</title><meta data-pg="" name="claude:viewport-fit-sides" content="cover"><link data-pg="" rel="preconnect" href="https://fonts.googleapis.com"><link data-pg="" rel="preconnect" href="https://fonts.gstatic.com" crossorigin=""><link data-pg="" rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,700&amp;family=Instrument+Sans:wght@400;500;600&amp;display=swap"><style data-pg="">
 /* Layout: una columna estrecha. Cabecera, franja de 5 días con detalle por horas, dos gráficas, mapa con capturas y editor plegado al final. */
 :root{
   --font-display:'Bricolage Grotesque',system-ui,-apple-system,'Segoe UI',sans-serif;
@@ -223,40 +213,36 @@ details.eh .row{margin:8px 0}
   .hrow input:first-of-type{grid-column:2}
 }
 @media (prefers-reduced-motion:reduce){*{scroll-behavior:auto!important}}
-</style>
-</head>
-<body>
-
-<div data-pg id="wrap">
+</style><div data-pg="" id="wrap">
   <svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
-    <defs><g id="cs"><circle cx="16" cy="30" r="7"/><circle cx="26" cy="24" r="9.5"/><circle cx="35" cy="30" r="6.5"/><rect x="16" y="30" width="19" height="7"/></g></defs>
-    <symbol id="i-sol" viewBox="0 0 48 48"><circle class="f-sun" cx="24" cy="24" r="9"/><path class="s-sun" d="M24 6v6M24 36v6M6 24h6M36 24h6M11.3 11.3l4.2 4.2M32.5 32.5l4.2 4.2M11.3 36.7l4.2-4.2M32.5 15.5l4.2-4.2"/></symbol>
-    <symbol id="i-poco" viewBox="0 0 48 48"><circle class="f-sun" cx="17" cy="17" r="6"/><path class="s-sun" d="M17 4v4M4 17h4M7.8 7.8l2.8 2.8M26.2 7.8l-2.8 2.8M7.8 26.2l2.8-2.8"/><use href="#cs" class="f-cloud" transform="translate(4,6)"/></symbol>
-    <defs><path id="cr" d="M30 8A16 16 0 1 0 40 32A13 13 0 0 1 30 8Z"/></defs>
-    <symbol id="i-luna" viewBox="0 0 48 48"><use href="#cr" class="f-moon"/></symbol>
-    <symbol id="i-lunapoco" viewBox="0 0 48 48"><use href="#cr" class="f-moon" transform="translate(-1,-2) scale(.68)"/><use href="#cs" class="f-cloud" transform="translate(4,6)"/></symbol>
-    <symbol id="i-nubes" viewBox="0 0 48 48"><use href="#cs" class="f-cloud" transform="translate(0,2)"/></symbol>
-    <symbol id="i-cubierto" viewBox="0 0 48 48"><use href="#cs" class="f-cloud" transform="translate(6,-4)"/><use href="#cs" class="f-cloud2" transform="translate(-3,4)"/></symbol>
-    <symbol id="i-lluvia" viewBox="0 0 48 48"><use href="#cs" class="f-cloud2" transform="translate(0,-6)"/><path class="s-cool" d="M17 34l-2 6M25 34l-2 6M33 34l-2 6"/></symbol>
-    <symbol id="i-tormenta" viewBox="0 0 48 48"><use href="#cs" class="f-cloud2" transform="translate(0,-6)"/><path class="f-sun" d="M26 29l-7 10h5l-2 8 9-12h-5z"/></symbol>
-    <symbol id="i-nieve" viewBox="0 0 48 48"><use href="#cs" class="f-cloud" transform="translate(0,-6)"/><g class="f-cool"><circle cx="16" cy="37" r="2.4"/><circle cx="25" cy="41" r="2.4"/><circle cx="34" cy="37" r="2.4"/></g></symbol>
-    <symbol id="i-niebla" viewBox="0 0 48 48"><path class="s-cloud" d="M10 14h28M6 23h30M12 32h28M8 41h20"/></symbol>
+    <defs><g id="cs"><circle cx="16" cy="30" r="7"></circle><circle cx="26" cy="24" r="9.5"></circle><circle cx="35" cy="30" r="6.5"></circle><rect x="16" y="30" width="19" height="7"></rect></g></defs>
+    <symbol id="i-sol" viewBox="0 0 48 48"><circle class="f-sun" cx="24" cy="24" r="9"></circle><path class="s-sun" d="M24 6v6M24 36v6M6 24h6M36 24h6M11.3 11.3l4.2 4.2M32.5 32.5l4.2 4.2M11.3 36.7l4.2-4.2M32.5 15.5l4.2-4.2"></path></symbol>
+    <symbol id="i-poco" viewBox="0 0 48 48"><circle class="f-sun" cx="17" cy="17" r="6"></circle><path class="s-sun" d="M17 4v4M4 17h4M7.8 7.8l2.8 2.8M26.2 7.8l-2.8 2.8M7.8 26.2l2.8-2.8"></path><use href="#cs" class="f-cloud" transform="translate(4,6)"></use></symbol>
+    <defs><path id="cr" d="M30 8A16 16 0 1 0 40 32A13 13 0 0 1 30 8Z"></path></defs>
+    <symbol id="i-luna" viewBox="0 0 48 48"><use href="#cr" class="f-moon"></use></symbol>
+    <symbol id="i-lunapoco" viewBox="0 0 48 48"><use href="#cr" class="f-moon" transform="translate(-1,-2) scale(.68)"></use><use href="#cs" class="f-cloud" transform="translate(4,6)"></use></symbol>
+    <symbol id="i-nubes" viewBox="0 0 48 48"><use href="#cs" class="f-cloud" transform="translate(0,2)"></use></symbol>
+    <symbol id="i-cubierto" viewBox="0 0 48 48"><use href="#cs" class="f-cloud" transform="translate(6,-4)"></use><use href="#cs" class="f-cloud2" transform="translate(-3,4)"></use></symbol>
+    <symbol id="i-lluvia" viewBox="0 0 48 48"><use href="#cs" class="f-cloud2" transform="translate(0,-6)"></use><path class="s-cool" d="M17 34l-2 6M25 34l-2 6M33 34l-2 6"></path></symbol>
+    <symbol id="i-tormenta" viewBox="0 0 48 48"><use href="#cs" class="f-cloud2" transform="translate(0,-6)"></use><path class="f-sun" d="M26 29l-7 10h5l-2 8 9-12h-5z"></path></symbol>
+    <symbol id="i-nieve" viewBox="0 0 48 48"><use href="#cs" class="f-cloud" transform="translate(0,-6)"></use><g class="f-cool"><circle cx="16" cy="37" r="2.4"></circle><circle cx="25" cy="41" r="2.4"></circle><circle cx="34" cy="37" r="2.4"></circle></g></symbol>
+    <symbol id="i-niebla" viewBox="0 0 48 48"><path class="s-cloud" d="M10 14h28M6 23h30M12 32h28M8 41h20"></path></symbol>
   </svg>
 
   <header class="top">
     <div>
       <div class="eyebrow">Previsión casera</div>
-      <h1 id="h-place" data-dyn></h1>
-      <div class="sub"><span id="h-date" data-dyn></span><span id="h-pills" data-dyn></span></div>
+      <h1 id="h-place" data-dyn=""></h1>
+      <div class="sub"><span id="h-date" data-dyn=""></span><span id="h-pills" data-dyn=""></span></div>
     </div>
-    <button type="button" class="btn" id="btn-edit" hidden>Editar</button>
+    <button type="button" class="btn" id="btn-edit" hidden="">Editar</button>
   </header>
 
-  <p class="note" id="h-note" data-dyn hidden></p>
+  <p class="note" id="h-note" data-dyn="" hidden=""></p>
 
   <section aria-labelledby="t-days">
     <h2 id="t-days">Próximos 5 días</h2>
-    <div class="days" id="days" data-dyn></div>
+    <div class="days" id="days" data-dyn=""></div>
     <p class="hint">Pulsa un día para ver la previsión por horas.</p>
   </section>
 
@@ -268,61 +254,57 @@ details.eh .row{margin:8px 0}
         <li><i class="sw cool"></i>Mínima</li>
         <li><i class="sw dash"></i>Tendencia (días 6 y 7)</li>
       </ul>
-      <div class="chart" id="tempchart" data-dyn></div>
-      <details class="tbl"><summary>Ver como tabla</summary><div class="scroll" id="tbl" data-dyn></div></details>
+      <div class="chart" id="tempchart" data-dyn=""></div>
+      <details class="tbl"><summary>Ver como tabla</summary><div class="scroll" id="tbl" data-dyn=""></div></details>
     </div>
   </section>
 
   <section aria-labelledby="t-rain">
     <h2 id="t-rain">Probabilidad de lluvia</h2>
-    <div class="panel"><div class="chart" id="rainchart" data-dyn></div></div>
+    <div class="panel"><div class="chart" id="rainchart" data-dyn=""></div></div>
   </section>
 
-  <section id="snowsec" aria-labelledby="t-snow" hidden>
+  <section id="snowsec" aria-labelledby="t-snow">
     <h2 id="t-snow">Cota de nieve</h2>
-    <div class="panel" id="snowbox" data-dyn></div>
+    <div class="panel" id="snowbox" data-dyn=""></div>
   </section>
 
   <section id="mapsec" aria-labelledby="t-map">
     <h2 id="t-map">Mapa de la zona</h2>
-    <div id="mapbox" data-dyn></div>
-    <div id="mapctl" data-dyn></div>
-    <p class="cap" id="map-cap" data-dyn></p>
+    <div id="mapbox" data-dyn=""></div>
+    <div id="mapctl" data-dyn=""></div>
+    <p class="cap" id="map-cap" data-dyn=""></p>
   </section>
 
-  <section id="editor" class="panel" aria-labelledby="t-ed" hidden>
+  <section id="editor" class="panel" aria-labelledby="t-ed" hidden="">
     <h2 id="t-ed">Editor</h2>
     <p class="hint">Cambia los datos y pulsa «Guardar y publicar». Quien tenga el enlace verá la nueva versión.</p>
-    <div id="ed-top" data-dyn></div>
+    <div id="ed-top" data-dyn=""></div>
     <h3>Los 7 días</h3>
     <p class="hint">Si no rellenas las horas de un día, se muestran estimadas a partir de la máxima y la mínima.</p>
-    <div id="ed-days" data-dyn></div>
+    <div id="ed-days" data-dyn=""></div>
     <h3>Cota de nieve</h3>
     <label class="chk" for="f-snow"><input type="checkbox" id="f-snow" data-f="snowon">Mostrar el apartado de cota de nieve</label>
     <p class="hint">Actívalo solo cuando haya temporal. Al ocultarlo se conservan los valores.</p>
-    <div id="ed-snow" data-dyn></div>
+    <div id="ed-snow" data-dyn=""></div>
     <h3>Mapa</h3>
     <label for="f-cap">Título del mapa<input id="f-cap" data-f="caption" maxlength="90"></label>
     <div class="row">
       <button type="button" class="btn small" id="btn-img">Añadir capturas</button>
       <button type="button" class="btn small" id="btn-noimg">Quitar todas las capturas</button>
-      <input type="file" id="mapfile" accept="image/*" multiple hidden>
+      <input type="file" id="mapfile" accept="image/*" multiple="" hidden="">
     </div>
     <p class="hint">Sube las capturas en orden (por ejemplo una cada 12 horas, hasta 8). Con dos o más aparece un deslizable para ver la evolución. Usa capturas del mismo tamaño. Pulsa sobre el mapa para añadir un punto y arrástralo para moverlo.</p>
-    <div id="ed-frames" data-dyn></div>
+    <div id="ed-frames" data-dyn=""></div>
     <label class="chk" for="f-showpts"><input type="checkbox" id="f-showpts" data-f="showpts">Mostrar los puntos sobre el mapa</label>
-    <div id="ed-points" data-dyn></div>
+    <div id="ed-points" data-dyn=""></div>
     <div class="actions">
       <button type="button" class="btn primary" id="btn-save">Guardar y publicar</button>
       <button type="button" class="btn" id="btn-discard">Descartar cambios</button>
       <span id="status" role="status" aria-live="polite"></span>
     </div>
   </section>
-</div>
-
-<script data-pg type="application/json" id="app-data">{"place":"Granada!!!","start":"2026-11-17","updated":"2026-11-16","sample":false,"note":"","days":[{"c":"nubes","max":17,"min":6,"mm":0.1,"wind":8,"gust":19,"pop":74,"feel":"","hours":[{"c":"sol","t":7,"mm":0,"wind":4,"gust":""},{"c":"sol","t":6,"mm":0,"wind":2,"gust":""},{"c":"sol","t":6,"mm":0,"wind":2,"gust":""},{"c":"sol","t":6,"mm":0,"wind":2,"gust":""},{"c":"sol","t":6,"mm":0,"wind":1,"gust":""},{"c":"sol","t":6,"mm":0,"wind":2,"gust":""},{"c":"sol","t":6,"mm":0,"wind":2,"gust":""},{"c":"poco","t":6,"mm":0,"wind":2,"gust":""},{"c":"poco","t":7,"mm":0,"wind":0,"gust":""},{"c":"poco","t":10,"mm":0,"wind":2,"gust":""},{"c":"poco","t":12,"mm":0,"wind":4,"gust":""},{"c":"poco","t":13,"mm":0,"wind":7,"gust":""},{"c":"poco","t":15,"mm":0,"wind":7,"gust":""},{"c":"poco","t":17,"mm":0,"wind":7,"gust":""},{"c":"nubes","t":17,"mm":0,"wind":8,"gust":""},{"c":"nubes","t":17,"mm":0,"wind":7,"gust":""},{"c":"nubes","t":16,"mm":0,"wind":5,"gust":""},{"c":"cubierto","t":16,"mm":0,"wind":8,"gust":""},{"c":"cubierto","t":16,"mm":0,"wind":9,"gust":""},{"c":"cubierto","t":16,"mm":0,"wind":9,"gust":""},{"c":"cubierto","t":16,"mm":0,"wind":12,"gust":""},{"c":"cubierto","t":16,"mm":0,"wind":12,"gust":""},{"c":"cubierto","t":16,"mm":0.1,"wind":11,"gust":""},{"c":"cubierto","t":16,"mm":0,"wind":9,"gust":""}]},{"c":"nubes","max":18,"min":14,"mm":0.7,"wind":8,"gust":29,"pop":94,"feel":"","hours":[{"c":"cubierto","t":16,"mm":0,"wind":7,"gust":""},{"c":"lluvia","t":16,"mm":0,"wind":7,"gust":""},{"c":"lluvia","t":16,"mm":0.3,"wind":8,"gust":""},{"c":"niebla","t":16,"mm":0.1,"wind":10,"gust":""},{"c":"cubierto","t":16,"mm":0,"wind":10,"gust":""},{"c":"cubierto","t":16,"mm":0,"wind":9,"gust":""},{"c":"nubes","t":15,"mm":0,"wind":8,"gust":""},{"c":"cubierto","t":14,"mm":0,"wind":7,"gust":""},{"c":"nubes","t":15,"mm":0,"wind":5,"gust":""},{"c":"nubes","t":15,"mm":0,"wind":9,"gust":""},{"c":"nubes","t":16,"mm":0,"wind":9,"gust":""},{"c":"nubes","t":17,"mm":0,"wind":9,"gust":""},{"c":"nubes","t":18,"mm":0,"wind":8,"gust":""},{"c":"nubes","t":18,"mm":0,"wind":7,"gust":""},{"c":"nubes","t":18,"mm":0,"wind":8,"gust":""},{"c":"nubes","t":18,"mm":0,"wind":7,"gust":""},{"c":"nubes","t":18,"mm":0,"wind":6,"gust":""},{"c":"cubierto","t":18,"mm":0,"wind":7,"gust":""},{"c":"cubierto","t":17,"mm":0,"wind":8,"gust":""},{"c":"lluvia","t":17,"mm":0,"wind":3,"gust":""},{"c":"lluvia","t":17,"mm":0.2,"wind":3,"gust":""},{"c":"cubierto","t":17,"mm":0,"wind":11,"gust":""},{"c":"cubierto","t":17,"mm":0,"wind":18,"gust":""},{"c":"lluvia","t":16,"mm":0.1,"wind":14,"gust":""}]},{"c":"lluvia","max":17,"min":11,"pop":95,"mm":9.8,"wind":16,"gust":42,"feel":15,"hours":[{"c":"niebla","t":16,"mm":0.2,"wind":8,"gust":""},{"c":"cubierto","t":16,"mm":0,"wind":13,"gust":""},{"c":"cubierto","t":16,"mm":0,"wind":16,"gust":""},{"c":"cubierto","t":16,"mm":0,"wind":15,"gust":""},{"c":"cubierto","t":16,"mm":0,"wind":10,"gust":""},{"c":"lluvia","t":15,"mm":0.1,"wind":9,"gust":""},{"c":"lluvia","t":15,"mm":0.3,"wind":8,"gust":""},{"c":"niebla","t":15,"mm":0.3,"wind":7,"gust":""},{"c":"niebla","t":15,"mm":0,"wind":9,"gust":""},{"c":"poco","t":15,"mm":0,"wind":10,"gust":""},{"c":"nubes","t":15,"mm":0,"wind":6,"gust":""},{"c":"poco","t":15,"mm":0,"wind":7,"gust":""},{"x":1},{"x":1},{"x":1},{"x":1},{"x":1},{"x":1},{"x":1},{"x":1},{"x":1},{"x":1},{"x":1},{"x":1}]},{"c":"poco","max":17,"min":9,"pop":6,"mm":0,"wind":6,"gust":25,"feel":15,"hours":[{"c":"nubes","t":10,"mm":0,"wind":2,"gust":8},{"c":"nubes","t":10,"mm":0,"wind":3,"gust":9},{"c":"nubes","t":9,"mm":0,"wind":4,"gust":12},{"c":"sol","t":11,"mm":0,"wind":5,"gust":23},{"c":"poco","t":15,"mm":0,"wind":6,"gust":25},{"c":"poco","t":17,"mm":0,"wind":5,"gust":25},{"c":"sol","t":13,"mm":0,"wind":2,"gust":22},{"c":"sol","t":10,"mm":0,"wind":4,"gust":21}]},{"c":"cubierto","max":21,"min":9,"pop":10,"mm":0,"wind":9,"gust":23,"feel":18,"hours":[{"c":"poco","t":9,"mm":0,"wind":2,"gust":16},{"c":"cubierto","t":10,"mm":0,"wind":2,"gust":23},{"c":"cubierto","t":18,"mm":0,"wind":8,"gust":22},{"c":"nubes","t":17,"mm":0,"wind":6,"gust":23}]},{"c":"cubierto","max":17,"min":11,"pop":0,"mm":0},{"c":"cubierto","max":18,"min":10,"pop":0,"mm":0}],"map":{"caption":"Mapa de ejemplo, sin imagen de fondo","frames":[],"ratio":1,"points":[{"n":"Norte","x":30,"y":24,"c":"nubes","t":11},{"n":"Valle","x":52,"y":48,"c":"poco","t":16},{"n":"Costa","x":74,"y":72,"c":"lluvia","t":14},{"n":"Sierra","x":22,"y":68,"c":"cubierto","t":3}],"hidePoints":true},"snow":{"on":true,"note":"","days":["","","","",""]}}</script>
-
-<script data-pg>
+</div><script data-pg="" type="application/json" id="app-data">{"place":"Granada","start":"2026-11-17","updated":"2026-11-16","sample":false,"note":"Posibles lluvias el miércoles y el jueves debido al paso de frentes desgastados. Temperatura se mantienen.","days":[{"c":"nubes","max":17,"min":6,"mm":0.1,"wind":8,"gust":19,"pop":74,"feel":"","hours":[{"c":"sol","t":7,"mm":0,"wind":4,"gust":""},{"c":"sol","t":6,"mm":0,"wind":2,"gust":""},{"c":"sol","t":6,"mm":0,"wind":2,"gust":""},{"c":"sol","t":6,"mm":0,"wind":2,"gust":""},{"c":"sol","t":6,"mm":0,"wind":1,"gust":""},{"c":"sol","t":6,"mm":0,"wind":2,"gust":""},{"c":"sol","t":6,"mm":0,"wind":2,"gust":""},{"c":"poco","t":6,"mm":0,"wind":2,"gust":""},{"c":"poco","t":7,"mm":0,"wind":0,"gust":""},{"c":"poco","t":10,"mm":0,"wind":2,"gust":""},{"c":"poco","t":12,"mm":0,"wind":4,"gust":""},{"c":"poco","t":13,"mm":0,"wind":7,"gust":""},{"c":"poco","t":15,"mm":0,"wind":7,"gust":""},{"c":"poco","t":17,"mm":0,"wind":7,"gust":""},{"c":"nubes","t":17,"mm":0,"wind":8,"gust":""},{"c":"nubes","t":17,"mm":0,"wind":7,"gust":""},{"c":"nubes","t":16,"mm":0,"wind":5,"gust":""},{"c":"cubierto","t":16,"mm":0,"wind":8,"gust":""},{"c":"cubierto","t":16,"mm":0,"wind":9,"gust":""},{"c":"cubierto","t":16,"mm":0,"wind":9,"gust":""},{"c":"cubierto","t":16,"mm":0,"wind":12,"gust":""},{"c":"cubierto","t":16,"mm":0,"wind":12,"gust":""},{"c":"cubierto","t":16,"mm":0.1,"wind":11,"gust":""},{"c":"cubierto","t":16,"mm":0,"wind":9,"gust":""}]},{"c":"nubes","max":18,"min":14,"mm":0.7,"wind":8,"gust":29,"pop":94,"feel":"","hours":[{"c":"cubierto","t":16,"mm":0,"wind":7,"gust":""},{"c":"lluvia","t":16,"mm":0,"wind":7,"gust":""},{"c":"lluvia","t":16,"mm":0.3,"wind":8,"gust":""},{"c":"niebla","t":16,"mm":0.1,"wind":10,"gust":""},{"c":"cubierto","t":16,"mm":0,"wind":10,"gust":""},{"c":"cubierto","t":16,"mm":0,"wind":9,"gust":""},{"c":"nubes","t":15,"mm":0,"wind":8,"gust":""},{"c":"cubierto","t":14,"mm":0,"wind":7,"gust":""},{"c":"nubes","t":15,"mm":0,"wind":5,"gust":""},{"c":"nubes","t":15,"mm":0,"wind":9,"gust":""},{"c":"nubes","t":16,"mm":0,"wind":9,"gust":""},{"c":"nubes","t":17,"mm":0,"wind":9,"gust":""},{"c":"nubes","t":18,"mm":0,"wind":8,"gust":""},{"c":"nubes","t":18,"mm":0,"wind":7,"gust":""},{"c":"nubes","t":18,"mm":0,"wind":8,"gust":""},{"c":"nubes","t":18,"mm":0,"wind":7,"gust":""},{"c":"nubes","t":18,"mm":0,"wind":6,"gust":""},{"c":"cubierto","t":18,"mm":0,"wind":7,"gust":""},{"c":"cubierto","t":17,"mm":0,"wind":8,"gust":""},{"c":"lluvia","t":17,"mm":0,"wind":3,"gust":""},{"c":"lluvia","t":17,"mm":0.2,"wind":3,"gust":""},{"c":"cubierto","t":17,"mm":0,"wind":11,"gust":""},{"c":"cubierto","t":17,"mm":0,"wind":18,"gust":""},{"c":"lluvia","t":16,"mm":0.1,"wind":14,"gust":""}]},{"c":"lluvia","max":17,"min":11,"pop":95,"mm":5,"wind":16,"gust":42,"feel":15,"hours":[{"c":"niebla","t":16,"mm":0.2,"wind":8,"gust":""},{"c":"cubierto","t":16,"mm":0,"wind":13,"gust":""},{"c":"cubierto","t":16,"mm":0,"wind":16,"gust":""},{"c":"cubierto","t":16,"mm":0,"wind":15,"gust":""},{"c":"cubierto","t":16,"mm":0,"wind":10,"gust":""},{"c":"lluvia","t":15,"mm":0.1,"wind":9,"gust":""},{"c":"lluvia","t":15,"mm":0.3,"wind":8,"gust":""},{"c":"niebla","t":15,"mm":0.3,"wind":7,"gust":""},{"c":"niebla","t":15,"mm":0,"wind":9,"gust":""},{"c":"poco","t":15,"mm":0,"wind":10,"gust":""},{"c":"nubes","t":15,"mm":0,"wind":6,"gust":""},{"c":"poco","t":15,"mm":0,"wind":7,"gust":""},{"c":"lluvia","t":16,"mm":0.2,"wind":16,"gust":41},{"c":"lluvia","t":17,"mm":0.2,"wind":16,"gust":42},{"c":"nubes","t":17,"mm":0,"wind":15,"gust":41},{"c":"nubes","t":17,"mm":0,"wind":13,"gust":40},{"c":"poco","t":16,"mm":0,"wind":11,"gust":37},{"c":"poco","t":15,"mm":0,"wind":10,"gust":31},{"c":"nubes","t":13,"mm":0,"wind":7,"gust":24},{"c":"nubes","t":12,"mm":0,"wind":6,"gust":18},{"c":"nubes","t":11,"mm":0,"wind":4,"gust":15},{"c":"nubes","t":11,"mm":0,"wind":3,"gust":13},{"c":"nubes","t":11,"mm":0,"wind":2,"gust":11},{"c":"nubes","t":11,"mm":0,"wind":1,"gust":9}]},{"c":"poco","max":16,"min":8,"pop":6,"mm":0,"wind":6,"gust":25,"feel":15,"hours":[{"c":"nubes","t":10,"mm":0,"wind":2,"gust":8},{"c":"nubes","t":10,"mm":0,"wind":3,"gust":9},{"c":"nubes","t":9,"mm":0,"wind":4,"gust":12},{"c":"sol","t":11,"mm":0,"wind":5,"gust":23},{"c":"poco","t":15,"mm":0,"wind":6,"gust":25},{"c":"poco","t":17,"mm":0,"wind":5,"gust":25},{"c":"sol","t":13,"mm":0,"wind":2,"gust":22},{"c":"sol","t":10,"mm":0,"wind":4,"gust":21}]},{"c":"cubierto","max":20,"min":7,"pop":10,"mm":0,"wind":9,"gust":23,"feel":18,"hours":[{"c":"poco","t":9,"mm":0,"wind":2,"gust":16},{"c":"cubierto","t":10,"mm":0,"wind":2,"gust":23},{"c":"cubierto","t":18,"mm":0,"wind":8,"gust":22},{"c":"nubes","t":17,"mm":0,"wind":6,"gust":23}]},{"c":"cubierto","max":19,"min":10,"pop":0,"mm":0},{"c":"cubierto","max":18,"min":8,"pop":0,"mm":0}],"map":{"caption":"Mapa de ejemplo, sin imagen de fondo","frames":[],"ratio":1,"points":[{"n":"Norte","x":30,"y":24,"c":"nubes","t":11},{"n":"Valle","x":52,"y":48,"c":"poco","t":16},{"n":"Costa","x":74,"y":72,"c":"lluvia","t":14},{"n":"Sierra","x":22,"y":68,"c":"cubierto","t":3}],"hidePoints":true},"snow":{"on":true,"note":"No se espera nieve en Sierra Nevada","days":[4100,3800,3500,"",""]}}</script><script data-pg="">
 (function(){
 'use strict';
 var $=function(s,r){return (r||document).querySelector(s)};
@@ -936,6 +918,4 @@ if(window.ResizeObserver){
   }catch(e){}
 })();
 })();
-</script>
-</body>
-</html>
+</script></body></html>
